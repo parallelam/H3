@@ -1,27 +1,72 @@
-<!DOCTYPE <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>NFL Hangman</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/reset.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/style.css" />
-    <script src="assets/javascript.js"></script>
+	<meta charset="UTF-8">
+	<title>NFL Team Name Guessing Game</title>
+	<!--Input reset CSS link below to clear any pre-existing player formatting.-->
+	<link rel="stylesheet" type="text/css" media="screen" href="assets/reset.css">
+	<!--Input Bootstrap CSS link below for formatting.-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!--Input custom CSS link below to override Bootstrap formatting.-->
+	<link rel="stylesheet" type="text/css" media="screen" href="assets/style.css">
 </head>
-<body>
+
+<body class="c-container / t--light">
+	<div class="container t-menu">
+		<div class="jumbotron t-menu__item">
+			<h1>2018 NFL Team Name Game</h1>
+			<h4>Type the team below's nickname!</h4>
+		</div>
+	
+	<div class="panel panel-default t-menu">
+				<div class="panel-heading t-menu__item">
+					<h3 class="panel-title t-menu__item mode"></h3>
+				</div>
+				<div class="panel-body t-menu__item logo-container"><span id="teamLogo"></span>
+				</div>
+	</div>	
+
+	<div class="panel panel-default t-menu">
+		<div class="panel-heading t-menu__item">
+			<h3 class="panel-title t-menu__item">Team Name</h3>
+		</div>
+		<div class="panel-body t-menu__item">
+			<h2 id="teamToGuess">_ _ _ _ _ _ _</h2>
+		</div>
+	</div>
+		 
+	<div class="panel panel-default t-menu">
+	 	<div class="panel-body t-menu__item">
+	 		Wrong Guesses: <span id="wrongGuesses"></span>
+		</div>
+	</div>
+	
+	<div class="panel panel-default t-menu">
+		<div class="panel-body t-menu__item">
+			Guesses Left: <span id="numGuesses"></span>
+		</div>
+	</div>
+	
+	<div class="panel panel-default t-menu">
+		<div class="panel-body t-menu__item">
+			Win Counter: <span id="winCounter">0</span>
+		</div>
+	</div>
+	
+	<div class="panel panel-default t-menu">
+		<div class="panel-body t-menu__item">
+			Loss Counter:  <span id="lossCounter">0</span>
+		</div>
+	</div>
+
+	<button class="o-menu__item / t-menu__item / js-change-theme"></button>
+	<!-- Line for HTML code to create buttons for toggling difficulties that was not completed.
+	<button class="o-menu__item / t-menu__item / easy"></button>
+	<button class="o-menu__item / t-menu__item / normal"></button>
+	<button class="o-menu__item / t-menu__item / hard"></button>-->
+	
+	
+</div>
+<script type="text/javascript" src="assets/javascript.js"></script>
 </body>
-    <div class="container">
-        <header>
-            <h1>NFL Team Hangman Game</h1>
-        </header>
-        <div class="underscores">_ _ _ _</div>
-        
-        <div class="correctGuess">Correct!</div>
-        
-        <div class="wrongGuess">Wrong!</div>
-        
-
-    </div>
-
 </html>
