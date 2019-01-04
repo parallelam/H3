@@ -11,8 +11,8 @@
 // Problem: Figure out how to address team names that have duplicate letters; ie 'broncos' has two 'o's.  -Complete.
 // Problem: Incorporate a reset CSS to clear any pre-existing user page formatting.  -Complete.
 // Problem: Incorporate a selectable "nightmode" option that overrides Bootstrap with custom CSS that makes the background a dark, night time friendly color.  -Complete.
+// Problem: Figure out a more efficient way to handle function 'displayTeamLogo' instead of 32 individual 'if' conditions.  -Complete.
 // Problem: Establish 3 different difficulties: easy, which allows 5 incorrect guesses; normal, which allows 3 incorrect guesses; hard, which allows 0 incorrect guesses.  -Incomplete. 
-// Problem: Figure out a more efficient way to handle function 'displayTeamLogo' instead of 32 individual 'if' conditions.  -Incomplete.
 
 var doubleLetter = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 var teams = ['49ers', 'bears', 'bengals', 'bills', 'broncos', 'browns', 'buccaneers', 'cardinals', 'chargers', 'chiefs', 'colts', 'cowboys', 'dolphins', 'eagles', 'falcons', 'giants', 'jaguars', 'jets', 'lions', 'packers',  'panthers', 'patriots', 'raiders', 'rams', 'ravens', 'redskins', 'saints', 'seahawks', 'steelers', 'texans', 'titans', 'vikings'];
