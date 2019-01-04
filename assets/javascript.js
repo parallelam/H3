@@ -58,9 +58,9 @@ function startGame() {
 	document.getElementById('winCounter').innerHTML = winCount;
 	document.getElementById('lossCounter').innerHTML = loseCount;
     document.getElementById('wrongGuesses').innerHTML = wrongLetters;
-    displayTeamLogo();
+    document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/'+teamChosen+'.png\">';
+    console.log(teamChosen);
 }
-
 
 function compareLetters(userKey) {
     if(teamChosen.indexOf(userKey) > -1) {
@@ -76,105 +76,6 @@ function compareLetters(userKey) {
 		guessesLeft--;
 		document.getElementById('numGuesses').innerHTML = guessesLeft;
 		document.getElementById('wrongGuesses').innerHTML = wrongLetters;
-    }
-}
-
-function displayTeamLogo(){
-    if (teamChosen === '49ers') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/49ers.png\" alt=\"San Francisco 49ers\">';
-    } 
-    if (teamChosen === 'bears') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/bears.png\" alt=\"Chicago Bears\">';
-    } 
-    if (teamChosen === 'bengals') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/bengals.png\" alt=\"Cincinnati Bengals\">';
-    } 
-    if (teamChosen === 'bills') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/bills.png\" alt=\"Buffalo Bills\">';
-    }
-    if (teamChosen === 'broncos') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/broncos.png\" alt=\"Denver Broncos\">';
-    }
-    if (teamChosen === 'browns') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/browns.gif\" alt=\"Cleveland Browns\">';
-    }
-    if (teamChosen === 'buccaneers') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/buccaneers.png\" alt=\"Tampa Bay Buccaneers\">';
-    }
-    if (teamChosen === 'cardinals') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/cardinals.png\" alt=\"Arizona Cardinals\">';
-    }
-    if (teamChosen === 'chargers') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/chargers.png\" alt=\"Los Angeles Chargers\">';
-    }
-    if (teamChosen === 'chiefs') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/chiefs.png\" alt=\"Kansas City Chiefs\">';
-    }
-    if (teamChosen === 'colts') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/colts.png\" alt=\"Indianapolis Colts\">';
-    }
-    if (teamChosen === 'cowboys') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/cowboys.png\" alt=\"Dallas Cowboys\">';
-    }
-    if (teamChosen === 'dolphins') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/dolphins.png\" alt=\"Miami Dolphins\">';
-    }
-    if (teamChosen === 'eagles') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/eagles.png\" alt=\"Philadelphia Eagles\">';
-    }
-    if (teamChosen === 'falcons') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/falcons.png\" alt=\"Atlanta Falcons\">';
-    }
-    if (teamChosen === 'giants') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/giants.gif\" alt=\"New York Giants\">';
-    }
-    if (teamChosen === 'jaguars') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/jaguars.png\" alt=\"Jacksonville Jaguars\">';
-    }
-    if (teamChosen === 'jets') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/jets.png\" alt=\"New York Jets\">';
-    }
-    if (teamChosen === 'lions') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/lions.png\" alt=\"Detroit Lions\">';
-    }
-    if (teamChosen === 'packers') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/packers.png\" alt=\"Green Bay Packers\">';
-    }
-    if (teamChosen === 'panthers') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/panthers.png\" alt=\"Carolina Panthers\">';
-    }
-    if (teamChosen === 'patriots') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/patriots.png\" alt=\"Best Team in the NFL. TB12 Numba Wun.\">';
-    }
-    if (teamChosen === 'raiders') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/raiders.png\" alt=\"Oakland Raiders\">';
-    }
-    if (teamChosen === 'rams') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/rams.png\" alt=\"Los Angeles Rams\">';
-    }
-    if (teamChosen === 'ravens') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/ravens.png\" alt=\"Baltimore Ravens\">';
-    }
-    if (teamChosen === 'redskins') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/redskins.png\" alt=\"Washington Redskins\">';
-    }
-    if (teamChosen === 'saints') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/saints.png\" alt=\"New Orleans Saints\">';
-    }
-    if (teamChosen === 'seahawks') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/seahawks.png\" alt=\"Seattle Seahawks\">';
-    }
-    if (teamChosen === 'steelers') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/steelers.png\" alt=\"Worst Team in the NFL. Patriots Numba Wun Stunnas.\">';
-    }
-    if (teamChosen === 'texans') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/texans.png\" alt=\"Houston Texans\">';
-    }
-    if (teamChosen === 'titans') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/titans.png\" alt=\"Tennessee Titans\">';
-    }
-    if (teamChosen === 'vikings') {
-        document.getElementById('teamLogo').innerHTML = '<img src=\"assets/images/vikings.png\" alt=\"Minnesota Vikings\">';
     }
 }
 
