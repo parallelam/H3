@@ -109,10 +109,6 @@ document.onkeyup = function(event) {
 	}		
 }
 
-// Lines for JavaScript code to create buttons for toggling difficulties that was not completed.
-// document.querySelector('.easy').innerHTML = "Set to Easy Mode";
-// document.querySelector('.normal').innerHTML = "Set to Normal Mode";
-// document.querySelector('.hard').innerHTML = "Set to Hard Mode";
 
 document.querySelector('.js-change-theme').innerHTML = "Switch to Night Display";
 document
@@ -132,3 +128,8 @@ document
         document.querySelector('.js-change-theme').innerHTML = 'Switch to Day Display';
     }
 })
+
+// Lines for JavaScript code to create buttons for toggling difficulties that was not completed.
+// document.querySelector('.easy').innerHTML = "Set to Easy Mode";
+// document.querySelector('.normal').innerHTML = "Set to Normal Mode";
+// document.querySelector('.hard').innerHTML = "Set to Hard Mode";
